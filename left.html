@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Left Frame</title>
+  <style>
+    /* Body with blurred background image */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('book.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Overlay to blur the background */
+    .overlay {
+      backdrop-filter: blur(6px); /* Blur effect */
+      background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+      padding: 20px;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    h3 {
+      color: #003366;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 2px #ccc;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 15px 0;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 18px;
+      color: #003366;
+      padding: 10px 20px;
+      border: 2px solid #003366;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      display: inline-block;
+      background-color: #e6f2ff;
+    }
+
+    a:hover {
+      background-color: #003366;
+      color: white;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h3>Categories</h3>
+    <ul>
+      <li><a href="cse.html" target="rightFrame">CSE</a></li>
+      <li><a href="ece.html" target="rightFrame">ECE</a></li>
+      <li><a href="eee.html" target="rightFrame">EEE</a></li>
+      <li><a href="civil.html" target="rightFrame">CIVIL</a></li>
+    </ul>
+  </div>
+</body>
+</html>
